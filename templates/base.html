@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>StockFácil</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+  <header>
+    <span class="marca">StockFácil</span>
+    {% if session.usuario %}<nav>Hola, {{ session.usuario }} · <a href="{{ url_for('logout') }}">Salir</a></nav>{% endif %}
+  </header>
+  <main>
+    {% for cat, msg in get_flashed_messages(with_categories=true) %}
+      <div class="aviso {{ cat }}">{{ msg }}</div>
+    {% endfor %}
+    {% block contenido %}{% endblock %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block contenido %}
+<section class="tarjeta angosta">
+  <h1>Nuevo producto</h1>
+  <form method="post">
+    <label>Nombre <input name="nombre" value="{{ datos.get('nombre', '') }}"></label>
+    <label>Precio (COP) <input name="precio" value="{{ datos.get('precio', '') }}"></label>
+    <label>Cantidad <input name="cantidad" value="{{ datos.get('cantidad', '') }}"></label>
+    <button type="submit">Guardar</button>
+    <a href="{{ url_for('productos') }}">Cancelar</a>
+  </form>
+</section>
+{% endblock %}

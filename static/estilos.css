@@ -1,0 +1,16 @@
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f3f5f8;color:#222}
+header{background:#1f4e79;color:#fff;padding:14px 28px;display:flex;justify-content:space-between;align-items:center}
+header a{color:#fff}.marca{font-weight:700;font-size:20px}
+main{max-width:820px;margin:30px auto;padding:0 16px}
+.tarjeta{background:#fff;border-radius:8px;padding:24px 28px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.angosta{max-width:380px;margin:auto}
+h1{margin-top:0;font-size:22px}
+label{display:block;margin-bottom:14px;font-size:14px}
+input{display:block;width:100%;box-sizing:border-box;padding:8px;margin-top:4px;border:1px solid #bbb;border-radius:4px}
+button,.boton{background:#1f4e79;color:#fff;border:0;padding:9px 16px;border-radius:4px;cursor:pointer;text-decoration:none;font-size:14px}
+.fila{display:flex;justify-content:space-between;align-items:center}
+.buscar{display:flex;gap:8px;margin:12px 0}.buscar input{margin:0}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #e3e3e3;text-align:left}
+th{background:#eef2f7}.vacio{color:#777;text-align:center}
+.aviso{padding:10px 14px;border-radius:4px;margin-bottom:14px;font-size:14px}
+.error{background:#fde8e8;color:#9b1c1c}.ok{background:#e6f4ea;color:#1e6b34}
